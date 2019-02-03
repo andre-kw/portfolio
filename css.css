@@ -11,10 +11,12 @@
 body {
   font-family: 'work sans';
   background-color: #fcf9ed;
+  max-width: 100em;
+  margin: 0 auto;
 }
 
 header {
-  margin: 1em 0 3em 0;
+  margin: 3em 0;
   padding: 5em 0;
   background:
     radial-gradient(circle at center, 
@@ -28,28 +30,40 @@ section {
   margin: 0 auto;
   font-size: 1.2em;
   line-height: 1.5em;
+  color: #3c4f65;
 }
 
 nav {
+  margin-top: -2em;
   display: flex;
-  flex-direction: row-reverse;
-  padding: 0 10px 0;
+  flex-direction: column;
+  float: right;
 }
 
 nav > a {
-  margin: 1em .5em;
+  margin: 0.7em 1.5em;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
+  text-align: right;
+  font-size: 1.5em;
 }
 
 nav > a:link,
-nav > a:visited { color: red }
+nav > a:visited { color: darkslateblue }
+nav > a:hover { color: blue }
+
+h2 {
+  font-family: 'playfair display sc';
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #caabd8;
+  margin: 1em 0 0.75em;
+}
 
 .headbox {
   width: 30em;
   margin: 0 auto;
   padding: 0 2.5em 1.5em 1.5em;
+  background-color: #d9f0ff;
 }
 
 .headbox h1 {
@@ -61,5 +75,5 @@ nav > a:visited { color: red }
   font-weight: 900;
   font-style: italic;
   line-height: 0.9em;
-  color: #900c3f;
+  color: #714288;
 }
