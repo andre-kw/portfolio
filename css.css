@@ -77,7 +77,6 @@ figure {
 
 figure > img {
   width: 95%;
-  min-width: 100%;
   max-width: 19.2em;
   min-height: 50%;
   max-height: 15em;
