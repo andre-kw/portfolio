@@ -58,12 +58,13 @@ nav > a:visited { color: #23a393 }
 nav > a:hover { color: blue }
 
 h2 {
-  margin: 1em 0 0.75em;
+  margin: 1em 0 0.5em;
   position: relative;
   font-family: 'playfair display sc';
   font-size: 2.75em;
   font-weight: 700;
   color: #ffd677;
+  line-height: 1em;
 }
 
 h2::before {
@@ -207,9 +208,25 @@ figcaption > span {
 #totop:active {
   background-color: #555;
 }
-#totop.hidden {
+.hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+button {
+  background-color: orange;
+  color: #fff;
+  border: 0;
+  padding: 1em;
+  font-size: 0.75em;
+  border-radius: 6px;
+}
+
+#random-thing-list {
+  max-width: 25em;
+  margin: 0 auto 2em;
+  list-style-type: square;
+  line-height: 2em;
 }
 
 

@@ -31,6 +31,59 @@ let store = (function() {
     }
   ];
 
+  let hobbies = [
+    { text: 'downloading music samples' },
+    { text: 'deleting stuff I don\'t use' },
+    { text: 'playing (and being uncannily good at) Destiny' },
+    { text: 'customizing the Windows desktop' },
+    {
+      text: 'playing old flash typing games',
+      href: 'https://www.coolmathgames.com/0-z-type/play',
+      alt: 'Z-Type: a typing/shooting game'
+    },
+    {
+      text: 'learning new VS Code shortcuts',
+      href: 'https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf',
+      alt: 'Keyboard shortcuts for Visual Studio Code',
+    },
+    {
+      text: 'showing people random Chrome Experiments',
+      href: 'https://chromeexperiments.com',
+      alt: 'Experiments with Google',
+    },
+    {
+      text: 'browsing the Reddit front page',
+      href: 'https://reddit.com',
+      alt: 'Reddit',
+    },
+  ];
+
+  let hobbiesSelected = [];
+
+  let shuffleSelectedHobbies = function() {
+    let roulette = [];
+    hobbiesSelected = [];
+
+    hobbies.forEach((h, index) => {
+      roulette.push(index);
+    });
+
+    for(let j = 0; j < 3; j++) {
+      hobbiesSelected.push(roulette.splice(Math.floor(Math.random() * (roulette.length)), 1));
+    }
+  };
+
+  let generateHobbiesHtml = function(hobby) {
+    let html = '';
+
+    hobbiesSelected.forEach(i => {
+      let inner = (hobbies[i].hasOwnProperty('href')) ? `<a target="_blank" href="${hobbies[i].href}">${hobbies[i].text}</a>` : hobbies[i].text;
+      html += `<li>${inner}</li>`;
+    });
+
+    return html;
+  };
+
   // generate html for an individual project
   let generateProjectHtml = function(proj) {
     let stackHtml = '';
@@ -66,31 +119,12 @@ let store = (function() {
   };
 
   let render = function() {
-    let html = generateHtml();
-    let el = document.getElementById('projects');
-    el.innerHTML = html;
+    document.getElementById('projects').innerHTML = generateHtml();
+    document.getElementById('random-thing-list').innerHTML = generateHobbiesHtml();
   };
 
   return {
-    projects,
+    shuffleSelectedHobbies,
     render
   };
 }());
-
-function bindShowOnScroll() {
-  $(window).scroll(() => {
-    if ($(window).scrollTop() > 300) {
-      $('#totop').removeClass('hidden');
-    } else {
-      $('#totop').addClass('hidden');
-    }
-  });
-}
-
-function main() {
-  bindShowOnScroll();
-
-  store.render();
-}
-
-$(main);
