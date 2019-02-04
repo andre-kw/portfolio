@@ -18,7 +18,7 @@ let store = (function() {
       href_live: '#',
       href_repo: '#',
       description: 'There will be a project here soon.',
-      stack: ['HTML5', 'Javascript', 'jQuery'],
+      stack: ['HTML5'],
     },
     {
       id: 3,
@@ -27,19 +27,33 @@ let store = (function() {
       href_live: '#',
       href_repo: '#',
       description: 'There will be a project here soon.',
-      stack: ['HTML5', 'Javascript', 'jQuery'],
+      stack: ['HTML5'],
     }
   ];
 
   let hobbies = [
-    { text: 'downloading music samples' },
-    { text: 'deleting stuff I don\'t use' },
-    { text: 'playing (and being uncannily good at) Destiny' },
-    { text: 'customizing the Windows desktop' },
+    { text: 'free music samples' },
+    { text: 'picking color schemes' },
+    { text: 'meditation' },
+    { text: 'Youtube tutorials' },
+    { text: 'staying up way too late' },
+    { text: 'Thinkful' },
+    { text: 'playing (and being good at) Destiny' },
+    { text: 'Windows desktop customization' },
     {
-      text: 'playing old flash typing games',
-      href: 'https://www.coolmathgames.com/0-z-type/play',
-      alt: 'Z-Type: a typing/shooting game'
+      text: 'old Flash games',
+      href: 'http://ferryhalim.com/orisinal/',
+      alt: 'Orisinal'
+    },
+    {
+      text: 'Vocabulary.com',
+      href: 'https://www.vocabulary.com/',
+      alt: 'Vocabulary.com: Learn Words'
+    },
+    {
+      text: 'neovim',
+      href: 'https://neovim.io',
+      alt: 'Neovim: a fork of Vim'
     },
     {
       text: 'learning new VS Code shortcuts',
@@ -47,12 +61,12 @@ let store = (function() {
       alt: 'Keyboard shortcuts for Visual Studio Code',
     },
     {
-      text: 'showing people random Chrome Experiments',
+      text: 'random Chrome Experiments',
       href: 'https://chromeexperiments.com',
       alt: 'Experiments with Google',
     },
     {
-      text: 'browsing the Reddit front page',
+      text: 'the Reddit front page',
       href: 'https://reddit.com',
       alt: 'Reddit',
     },
