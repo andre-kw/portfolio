@@ -25,6 +25,12 @@ header {
     url('img/code.png');
 }
 
+h1 {
+  background-image: url(img/code.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ece1b94f;
+}
+
 section {
   width: 65%;
   margin: 0 auto;
@@ -219,12 +225,6 @@ figcaption > span {
   nav > a {
     margin: 0.7em 0.5em;
     font-size: 1.3em;
-  }
-
-  h1 {
-    background-image: url(img/code.png);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #ffffff4f;
   }
 
   h2 {
