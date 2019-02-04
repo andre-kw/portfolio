@@ -9,7 +9,7 @@ let store = (function() {
       href_live: 'https://thinkful-ei-armadillo.github.io/quiz-andre-ali',
       href_repo: 'https://github.com/thinkful-ei-armadillo/quiz-andre-ali',
       description: 'A Thinkful assignment created by Ali Lahrime and myself that features responsive design and accessibilty; use it to test your knowledge of hip-hop culture.',
-      stack: ['html5', 'javascript', 'jquery'],
+      stack: ['HTML5', 'Javascript', 'jQuery'],
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ let store = (function() {
       href_live: '#',
       href_repo: '#',
       description: 'There will be a project here soon.',
-      stack: ['html5', 'javascript', 'jquery'],
+      stack: ['HTML5', 'Javascript', 'jQuery'],
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ let store = (function() {
       href_live: '#',
       href_repo: '#',
       description: 'There will be a project here soon.',
-      stack: ['html5', 'javascript', 'jquery'],
+      stack: ['HTML5', 'Javascript', 'jQuery'],
     }
   ];
 
@@ -36,7 +36,7 @@ let store = (function() {
     let stackHtml = '';
     proj.stack.forEach(i => {
       //stackHtml += `<i class="fab fa-${i}"></i>`;
-      stackHtml += `<i class="devicon-${i}-plain colored"></i>`;
+      stackHtml += `<i class="devicon-${i.toLowerCase()}-plain colored" title="This project used ${i}."></i>`;
     });
 
     return `

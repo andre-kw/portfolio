@@ -143,13 +143,14 @@ figcaption > span {
 .headbox {
   width: 30em;
   margin: 0 auto;
-  padding: 0 2em 1.5em 1.5em;
+  /* padding: 0 2em 1.5em 1.5em; */
+  padding: 0 0.5em 1.5em 1.75em;
   background-color: #20716a;
 }
 
 .headbox h1 {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
   font-size: 7em;
   font-family: 'playfair display sc';
   letter-spacing: -2px;
@@ -196,10 +197,12 @@ figcaption > span {
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
   header {
-    margin: 1.5em 0;
-    padding: 2em 0 0;
+    margin: 0 0 1.5em 0;
+    padding: 0;
     background: none;
   }
 
@@ -218,6 +221,12 @@ figcaption > span {
     font-size: 1.3em;
   }
 
+  h1 {
+    background-image: url(img/code.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff4f;
+  }
+
   h2 {
     margin: .75em 0 0;
     font-size: 2.7em;
@@ -232,5 +241,15 @@ figcaption > span {
 
   .contact {
     margin-bottom: 4em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .headbox h1 {
+    font-size: 5em;
+  }
+
+  .contact a {
+    font-size: 0.9em;
   }
 }
