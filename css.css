@@ -133,17 +133,27 @@ figcaption > span {
   color: #1f7a94;
 }
 
+.contact a:focus {
+  outline: none;
+  text-decoration: underline;
+  color: #8ce2c3;
+}
+
+.contact a:hover {
+  color: #23a393;
+}
+
 .contact i {
   font-size: 2.5em;
   display: block;
 }
 
 .contact span {
+  max-width: 7em;
+  display: inline-block;
   font-size: .75em;
-}
-
-.contact a:hover {
-  color: #23a393;
+  word-break: break-all;
+  text-decoration: inherit;
 }
 
 .headbox {

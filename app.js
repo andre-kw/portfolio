@@ -36,13 +36,13 @@ let store = (function() {
     let stackHtml = '';
     proj.stack.forEach(i => {
       //stackHtml += `<i class="fab fa-${i}"></i>`;
-      stackHtml += `<i class="devicon-${i.toLowerCase()}-plain colored" title="This project used ${i}."></i>`;
+      stackHtml += `<i class="devicon-${i.toLowerCase()}-plain colored" title="This project uses ${i}." aria-label="${i}"></i>`;
     });
 
     return `
       <figure>
         <img src="${proj.img}" alt="A screenshot of ${proj.title}">
-        <figcaption>${proj.title} </figcaption>
+        <figcaption>${proj.title}</figcaption>
         <p class="links">
           <a target="_blank" href="${proj.href_live}">live site</a> | 
           <a target="_blank" href="${proj.href_repo}">repo</a>
