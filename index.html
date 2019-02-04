@@ -7,15 +7,16 @@
 
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
   <main role="main">
-    <nav role="navigation">
+    <!--<nav role="navigation">
       <a target="_blank" href="https://github.com/andre-kw">Github <i class="fab fa-github"></i></a>
       <a target="_blank" href="#">Linkedin <i class="fab fa-linkedin"></i></a>
       <a href="mailto:andre.k.willie@gmail.com">Email <i class="fas fa-envelope"></i></a>
-    </nav>
+    </nav>-->
 
     <header role="banner">
       <div class="headbox">
@@ -23,14 +24,21 @@
       </div>
     </header>
 
+    <a id="totop" href="#" class="hidden"><i class="fas fa-chevron-up"></i></a>
+
+    <section class="contact" role="article">
+      <a target="_blank" href="https://github.com/andre-kw"><i class="fab fa-github"></i> <span>Github</span></a>
+      <a target="_blank" href="#"><i class="fab fa-linkedin"></i> <span>Linkedin</span></a>
+      <a href="mailto:andre.k.willie@gmail.com"><i class="fas fa-envelope"></i> <span>Email</span></a>
+    </section>
+
     <section role="article">
       <h2>origin story</h2>
       <p>
         <strong>My name is Andre Willie and I am a budding web developer based in Atlanta, GA.</strong>
 
         I've been messing with computers for almost as long as I've known how to read. But my 
-        experience with art (and specifically music) from early on has turned me into a... 
-        <em>special kind</em> of nerd.
+        experience with art and music from early on has turned me into a... <em>special kind</em> of nerd.
       </p>
 
       <p>
@@ -47,20 +55,11 @@
         Below you will find projects I have made. This list will grow as I continue my 
         Thinkful course and also finish some small personal projects.
       </p>
-
-      <figure>
-        <img src="img/proj1.png" alt="A screenshot of The Culture Quiz">
-        <figcaption>The Culture Quiz <span>html5, js</span></figcaption>
-        <p class="links">
-          <a target="_blank" href="https://thinkful-ei-armadillo.github.io/quiz-andre-ali/">live site</a> | 
-          <a target="_blank" href="https://github.com/thinkful-ei-armadillo/quiz-andre-ali">repo</a>
-        </p>
-        <p>
-          A Thinkful assignment created by Ali Lahrime (<i class="fab fa-github"></i> <a href="https://github.com/lahrime" class="gh-handle">@Lahrime</a>) and myself that features responsive design  
-          and accessibilty; use it to test your knowledge of hip-hop culture.
-        </p>
-      </figure>
+      <div id="projects"></div>
     </section>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
