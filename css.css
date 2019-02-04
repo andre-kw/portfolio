@@ -21,7 +21,7 @@ header {
   background:
     radial-gradient(circle at center, 
       rgba(255,255,255,0) 0%, 
-      #fcf9ed 35%),
+      #fcf9ed 80%),
     url('img/code.png');
 }
 
