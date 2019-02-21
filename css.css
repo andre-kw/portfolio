@@ -58,6 +58,7 @@ nav > a:visited { color: #23a393 }
 nav > a:hover { color: blue }
 
 h2 {
+  width: 100%;
   margin: 1em 0 0.5em;
   position: relative;
   font-family: 'playfair display sc';
@@ -104,7 +105,7 @@ figure .links {
 
 figure .links span {
   float: right;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 figure .links span i {
@@ -214,19 +215,37 @@ figcaption > span {
 }
 
 button {
+  width: 100%;
+  padding: 1em;
   background-color: orange;
   color: #fff;
   border: 0;
-  padding: 1em;
-  font-size: 0.75em;
   border-radius: 6px;
+  font-size: 0.75em;
+  cursor: pointer;
 }
 
+button:active { background-color: darkgoldenrod }
+
 #random-thing-list {
-  max-width: 25em;
-  margin: 1em auto 2em;
+  max-width: 18em;
   list-style-type: square;
   line-height: 2em;
+}
+
+.thing-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-left {
+  flex: 10 15em;
+}
+.list-right {
+  margin: auto;
+  padding: 0 3em;
+  flex-wrap: wrap;
+  flex: 1 5em;
 }
 
 
