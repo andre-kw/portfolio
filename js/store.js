@@ -8,7 +8,7 @@ let store = (function() {
       img: 'img/proj2.png',
       href_live: 'https://andre-kw-star-wars.now.sh',
       href_repo: 'https://github.com/andre-kw/thinkful-star-wars',
-      description: 'A Thinkful assignment that uses the Star Wars API to search for infomation.',
+      description: 'A Thinkful assignment that uses the Star Wars API to search for information.',
       stack: ['React', 'Nodejs'],
     },
     {
