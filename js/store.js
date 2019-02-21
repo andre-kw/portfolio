@@ -4,21 +4,21 @@ let store = (function() {
   let projects = [
     {
       id: 1,
+      title: 'Star Wars Search',
+      img: 'img/proj2.png',
+      href_live: 'https://andre-kw-star-wars.now.sh',
+      href_repo: 'https://github.com/andre-kw/thinkful-star-wars',
+      description: 'A Thinkful assignment that uses the Star Wars API to search for infomation.',
+      stack: ['React', 'Nodejs'],
+    },
+    {
+      id: 2,
       title: 'The Culture Quiz',
       img: 'img/proj1.png',
       href_live: 'https://thinkful-ei-armadillo.github.io/quiz-andre-ali',
       href_repo: 'https://github.com/thinkful-ei-armadillo/quiz-andre-ali',
       description: 'A Thinkful assignment created by Ali Lahrime and myself that features responsive design and accessibilty; use it to test your knowledge of hip-hop culture.',
       stack: ['HTML5', 'Javascript', 'jQuery'],
-    },
-    {
-      id: 2,
-      title: 'TBA',
-      img: 'https://via.placeholder.com/350',
-      href_live: '#',
-      href_repo: '#',
-      description: 'There will be a project here soon.',
-      stack: ['HTML5'],
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ let store = (function() {
     { text: 'Youtube tutorials' },
     { text: 'staying up way too late' },
     { text: 'Thinkful' },
-    { text: 'playing (and being good at) Destiny' },
+    { text: 'playing Destiny' },
     { text: 'Windows desktop customization' },
     {
       text: 'old Flash games',
