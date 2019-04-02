@@ -292,10 +292,23 @@ button:active { background-color: darkgoldenrod }
 
 @media only screen and (max-width: 320px) {
   .headbox h1 {
-    font-size: 5em;
+    font-size: 4.8em;
   }
 
   .contact a {
+    font-size: 0.75em;
+    line-height: 1.5em;
+  }
+
+  .contact a span {
+    font-size: 0.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
     font-size: 0.9em;
   }
 }
