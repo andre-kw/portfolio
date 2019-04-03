@@ -4,21 +4,23 @@ let store = (function() {
   let projects = [
     {
       id: 1,
-      title: 'Star Wars Search',
-      img: 'img/proj2.png',
-      href_live: 'https://andre-kw-star-wars.now.sh',
-      href_repo: 'https://github.com/andre-kw/thinkful-star-wars',
-      description: 'A Thinkful assignment that uses the Star Wars API to search for information.',
-      stack: ['React', 'Nodejs'],
+      title: 'Battlesound',
+      img: 'img/battlesound.png',
+      href_live: 'https://battlesound.now.sh',
+      href_repo: 'https://github.com/andre-kw/battlesound-client',
+      description: 'My first capstone project for Thinkful. Musicians can sign up and create music \
+        contests (a.k.a beat battles), where other users can vote on submissions they like the most. \
+        Features user authentication and responsive design.',
+      stack: ['React', 'Nodejs', 'Express', 'PostgreSQL'],
     },
     {
       id: 2,
-      title: 'The Culture Quiz',
-      img: 'img/proj1.png',
-      href_live: 'https://thinkful-ei-armadillo.github.io/quiz-andre-ali',
-      href_repo: 'https://github.com/thinkful-ei-armadillo/quiz-andre-ali',
-      description: 'A Thinkful assignment created by Ali Lahrime and myself that features responsive design and accessibilty; use it to test your knowledge of hip-hop culture.',
-      stack: ['HTML5', 'Javascript', 'jQuery'],
+      title: 'Star Wars Search',
+      img: 'img/sw.png',
+      href_live: 'https://andre-kw-star-wars.now.sh',
+      href_repo: 'https://github.com/andre-kw/thinkful-star-wars',
+      description: 'A Thinkful assignment that uses the Star Wars API to search for information.',
+      stack: ['React'],
     },
     {
       id: 3,
@@ -101,9 +103,11 @@ let store = (function() {
   // generate html for an individual project
   let generateProjectHtml = function(proj) {
     let stackHtml = '';
+    let iconsOriginal = ['Express'];
     proj.stack.forEach(i => {
-      //stackHtml += `<i class="fab fa-${i}"></i>`;
-      stackHtml += `<i class="devicon-${i.toLowerCase()}-plain colored" title="This project uses ${i}." aria-label="${i}"></i>`;
+      const iconType = (iconsOriginal.includes(i)) ? 'original' : 'plain';
+
+      stackHtml += `<i class="devicon-${i.toLowerCase()}-${iconType} colored" title="This project uses ${i}." aria-label="${i}"></i>`;
     });
 
     return `
