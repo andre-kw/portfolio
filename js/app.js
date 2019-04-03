@@ -1,4 +1,4 @@
-'use strict';
+/* global $, store */
 
 function bindShowOnScroll() {
   $(window).scroll(() => {
@@ -13,8 +13,14 @@ function bindShowOnScroll() {
 function bindRandomListBtn() {
   $('#random-things').click(event => {
     event.preventDefault();
-    store.shuffleSelectedHobbies();
-    store.render();
+    const overlay = document.getElementsByClassName('overlay')[0];
+    overlay.classList.remove('hide');
+
+    setTimeout(() => {
+      overlay.classList.add('hide');
+      store.shuffleSelectedHobbies();
+      store.render();
+    }, 250);
   });
 }
 

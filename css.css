@@ -240,12 +240,30 @@ button:active { background-color: darkgoldenrod }
 
 .list-left {
   flex: 10 15em;
+  position: relative;
 }
 .list-right {
   margin: auto;
   padding: 0 3em;
   flex-wrap: wrap;
   flex: 1 5em;
+}
+
+.overlay {
+  margin: 3%;
+  position: absolute;
+  top: 0; left: 0;
+  width: 94%; height: 100%;
+  user-select: none;
+  pointer-events: none;
+  background-color: #fbf9f5;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.hide {
+  height: 0;
+  transition: all .5s ease;
 }
 
 
@@ -275,7 +293,7 @@ button:active { background-color: darkgoldenrod }
 
   h2 {
     margin: .75em 0 0;
-    font-size: 2.7em;
+    font-size: 2.3em;
     line-height: 1em;
   }
 
@@ -287,6 +305,10 @@ button:active { background-color: darkgoldenrod }
 
   .contact {
     margin-bottom: 4em;
+  }
+
+  .list-right {
+    padding: 1em 0;
   }
 }
 
